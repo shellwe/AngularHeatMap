@@ -1,0 +1,91 @@
+Row,Column,Score
+Connection,All,64
+Connection,Asia,66
+Connection,India,64
+Connection,North America,63
+Creativity,All,45
+Creativity,Asia,47
+Creativity,Europe,45
+Empowerment,India,71
+Empowerment,North America,66
+Feedback,All,69
+Creativity,India,46
+Creativity,North America,45
+Culture,All,61
+Culture,Asia,62
+Culture,Europe,62
+Culture,India,65
+Connection,Europe,64
+Culture,North America,60
+Empowerment,All,66
+Empowerment,Asia,65
+Empowerment,Europe,65
+Feedback,Asia,68
+Feedback,Europe,66
+Feedback,India,70
+Feedback,North America,70
+Growth,All,42
+Growth,Asia,42
+Growth,Europe,41
+Growth,India,38
+Growth,North America,42
+Leadership,All,67
+Leadership,Asia,67
+Leadership,Europe,68
+Leadership,India,69
+Leadership,North America,67
+Manager,All,75
+Manager,Asia,76
+Manager,Europe,76
+Manager,India,73
+Manager,North America,75
+Prospects,All,71
+Prospects,Asia,71
+Prospects,Europe,71
+Prospects,India,72
+Prospects,North America,72
+Purpose,All,73
+Purpose,Asia,74
+Purpose,Europe,74
+Purpose,India,74
+Purpose,North America,73
+Recognition,All,61
+Recognition,Asia,61
+Recognition,Europe,60
+Recognition,India,59
+Recognition,North America,61
+Resources,All,63
+Resources,Asia,64
+Resources,Europe,63
+Resources,India,64
+Resources,North America,63
+Retention,All,60
+Retention,Asia,60
+Retention,Europe,61
+Retention,India,64
+Retention,North America,60
+Rewards,All,58
+Rewards,Asia,57
+Rewards,Europe,60
+Rewards,India,63
+Rewards,North America,58
+Role,All,74
+Role,Asia,75
+Role,Europe,78
+Role,India,73
+Role,North America,72
+Team,All,72
+Team,Asia,70
+Team,Europe,72
+Team,India,71
+Team,North America,72
+Work Life Balance,All,65
+Work Life Balance,Asia,66
+Work Life Balance,Europe,66
+Work Life Balance,India,66
+Work Life Balance,North America,65
+eSat,All,66
+eSat,Asia,65
+eSat,Europe,68
+eSat,India,69
+eSat,North America,66
