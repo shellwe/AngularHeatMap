@@ -1,0 +1,78 @@
+$blue: #33adda;
+$red: #ed5f63;
+
+.table {
+  width: 100%;
+  max-width: 960px
+}
+.columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  width: 100%;
+  flex-direction: column;
+}
+.cell {
+  width: 100%;
+  border: 1px solid #ffffff;
+  background: #f8f8f8;
+  padding: 20px 10px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row
+}
+.column-header {
+  border: 1px solid #f8f8f8;
+  background: #ffffff;
+}
+.row-header {
+  border: 1px solid #f8f8f8;
+  background: #ffffff;
+  justify-content: flex-start
+}
+
+@for $i from 0 through 4 {
+  $amount: $i * 10;
+  .blue-#{$i} {
+    background: lighten($blue, $amount);
+  }
+  .red-#{$i} {
+    background: lighten($red, $amount);
+  }
+}
+.legend {
+  max-width: 300px;
+}
+.legend-header {
+  padding: 10px;
+ }
+.legend-colors {
+  display: flex;
+  flex-direction: row;
+}
+.legend-colors > .cell {
+  padding: 10px;
+}
+.legend-range {
+  display: flex;
+  justify-content: space-between;
+}
+.legend-range > span {
+  padding: 10px;
+}

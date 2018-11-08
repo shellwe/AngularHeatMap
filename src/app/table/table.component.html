@@ -1,0 +1,43 @@
+<div class="table">
+	<div class="rows">
+		<div class="row">
+			<div class="columns">
+				<div class="cell row-header">Drivers</div>
+				<div class="cell column-header" *ngFor="let column of columns">
+					{{column}}
+				</div>
+			</div>
+			<div class="columns" *ngFor="let row of rows">
+					<div class="cell row-header">
+						{{row}}
+					</div>
+					<ng-container *ngFor="let column of columns">
+						<ng-container *ngFor="let item of sortedTable(row, column)">
+							<div class="cell" [ngClass]="colorTable(column, item)">
+								{{item.Score}}
+							</div>
+						</ng-container>
+					</ng-container>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="legend">
+	<div class="legend-header">
+		Legend
+	</div>
+	<div class="legend-colors">
+		<div class="cell red-0"></div>
+		<div class="cell red-1"></div>
+		<div class="cell red-2"></div>
+		<div class="lengend-color cell"></div>
+		<div class="cell blue-2"></div>
+		<div class="cell blue-1"></div>
+		<div class="cell blue-0"></div>
+	</div>
+	<div class="legend-range">
+	 <span>Minimum</span>
+	 <span>Median</span>
+	 <span>Maximum</span>
+	</div>
+</div>
