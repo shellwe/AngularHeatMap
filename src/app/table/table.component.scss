@@ -1,9 +1,5 @@
-$blue: #33adda;
-$red: #ed5f63;
-
 .table {
   width: 100%;
-  max-width: 960px
 }
 .columns {
   width: 100%;
@@ -47,15 +43,26 @@ $red: #ed5f63;
   justify-content: flex-start
 }
 
-@for $i from 0 through 4 {
-  $amount: $i * 10;
-  .blue-#{$i} {
-    background: lighten($blue, $amount);
-  }
-  .red-#{$i} {
-    background: lighten($red, $amount);
-  }
+.blue {
+  background-color: #0099ff;
 }
+
+.light-blue{
+  background-color: #b3e0ff;
+}
+
+.white {
+  background-color: #FFF;
+}
+
+.light-red{
+  background-color: #ffc2b3
+}
+
+.red {
+  background-color: #ff3300;
+}
+
 .legend {
   max-width: 300px;
 }

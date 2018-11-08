@@ -13,7 +13,7 @@
 					</div>
 					<ng-container *ngFor="let column of columns">
 						<ng-container *ngFor="let item of sortedTable(row, column)">
-							<div class="cell" [ngClass]="colorTable(column, item)">
+							<div class="cell" [ngClass]="colorTable(item.Score)">
 								{{item.Score}}
 							</div>
 						</ng-container>
@@ -27,13 +27,11 @@
 		Legend
 	</div>
 	<div class="legend-colors">
-		<div class="cell red-0"></div>
-		<div class="cell red-1"></div>
-		<div class="cell red-2"></div>
-		<div class="lengend-color cell"></div>
-		<div class="cell blue-2"></div>
-		<div class="cell blue-1"></div>
-		<div class="cell blue-0"></div>
+		<div class="cell red"></div>
+		<div class="cell light-red"></div>
+		<div class="cell white"></div>
+		<div class="cell light-blue"></div>
+		<div class="cell blue"></div>
 	</div>
 	<div class="legend-range">
 	 <span>Minimum</span>

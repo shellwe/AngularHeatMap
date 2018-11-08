@@ -13,21 +13,35 @@ export class TableComponent implements OnInit {
   selectedRegion: string;
   constructor() {
   }
-  colorTable(column, cell) {
-    const sortedTable = this.table
-    .filter(item => item.Column === column)
-    .sort((a, b) => a.Score - b.Score)
-    .map(item => item.Score);
-    let opacity = 0;
-    if (cell.Score >= 70) {
-      opacity = sortedTable.reverse().indexOf(cell.Score);
-      return `blue-${opacity}`;
-    } else if (cell.Score <= 60) {
-      opacity = sortedTable.indexOf(cell.Score);
-      return `red-${opacity}`;
-    } else {
-      return 'cell';
+  colorTable(Score) {
+    if (Score > 70) {
+      return 'blue';
     }
+    if (Score > 65) {
+      return 'light-blue';
+    }
+    if (Score > 60) {
+      return 'white';
+    }
+    if (Score > 55) {
+      return 'light-red';
+    }
+    if (Score <= 50) {
+      return 'red';
+    }
+    // Note: Explore why switch won't work
+    // switch (Score) {
+    //   case (Score => 71):
+    //     return 'blue';
+    //   case (Score => 61):
+    //     return 'light-blue';
+    //   case (Score => 51):
+    //     return 'white';
+    //   case (Score => 41):
+    //     return 'light-red';
+    //   default:
+    //     return 'red';
+    // }
   }
   sortedTable(row, column) {
     return this.table.filter(item => item.Column === column && item.Row === row);
