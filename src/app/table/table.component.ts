@@ -26,7 +26,7 @@ export class TableComponent implements OnInit {
     if (Score > 55) {
       return 'light-red';
     }
-    if (Score <= 50) {
+    if (Score <= 55) {
       return 'red';
     }
     // Note: Explore why switch won't work
