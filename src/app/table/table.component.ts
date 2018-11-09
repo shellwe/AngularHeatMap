@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-table',
@@ -12,9 +13,16 @@ export class TableComponent implements OnInit {
   buckets: Array<any>;
   selectedRegion: string;
   constructor() {
+    // this.columns.forEach(function (value) {
+    //   console.log(value);
+    // });
+
+    const largestCluster = this.table.filter(item => item.Column === 'all' && item.Score > 60 && item.Score < 70).length;
+    console.log(largestCluster);
+
   }
 
-  colorTable(Score: number) {
+  colorTable(Score) {
     let color = null;
     switch (true) {
       case Score > 70: color = 'blue';

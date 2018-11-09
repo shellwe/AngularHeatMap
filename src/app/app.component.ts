@@ -20,6 +20,9 @@ export class AppComponent implements OnInit {
       this.data = res;
       this.rows = new Set(this.data.sort((a, b) => a.Score - b.Score).reverse().map(table => table.Row));
       this.columns = new Set(this.data.map(table => table.Column));
+      // console.log(this.data);
+      // console.log(this.rows);
+      // console.log(this.columns);
     });
   }
 
