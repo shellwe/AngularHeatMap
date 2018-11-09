@@ -4,9 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## My notes to project owner
 
-### Full disclosure
-Being new to Angular I did ask a coworker his advice on how to set up the table with the given JSON and he gave me a few pointers. Afterwards it did hit me that even though you didn't say I couldn't ask anyone questions that seems rather implied as it is a test of **my** ability to write the code. If that disqualifies me I totally understand and I am sorry for using up the time you gave evaluating my fit for this position. I've been learning a ton over the past couple weeks so I really appreciate this challenge.
-
 ### What needs work
 I still need to set up the borders around the largest cluster, I am looking into the best way on how to do this. While I may be able to do this through manipulating the DOM it seems like I should be able to do this from the Angular side but I can't quite figure it out how to account for the gaps in a group of similar colors. As I learn more angular in the coming weeks I will revisit it even if this opportunity passes because I am very intrigued how to do it. Sadly it may require a rework from how how the table was set up.
 
