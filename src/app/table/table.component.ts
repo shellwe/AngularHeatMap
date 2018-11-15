@@ -13,13 +13,11 @@ export class TableComponent implements OnInit {
   buckets: Array<any>;
   selectedRegion: string;
   constructor() {
-    // this.columns.forEach(function (value) {
-    //   console.log(value);
-    // });
+  }
 
-    const largestCluster = this.table.filter(item => item.Column === 'all' && item.Score > 60 && item.Score < 70).length;
+  largestCluster() {
+    const largestCluster = this.table.filter(item => item.Score > 60 && item.Score < 70).length;
     console.log(largestCluster);
-
   }
 
   colorTable(Score) {
